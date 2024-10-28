@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios y Calificaciones</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comentarios y Calificaciones</h1>
+        <form id="commentForm">
+            <textarea id="comment" placeholder="Deja tu comentario" required></textarea>
+            <div class="rating">
+                <label>Calificación:</label>
+                <select id="rating" required>
+                    <option value="">Selecciona una calificación</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="commentsSection">
+            <h2>Comentarios:</h2>
+            <ul id="commentsList"></ul>
+        </div>
+    </div>
+    <script src="script4.js"></script>
+</body>
+</html>
